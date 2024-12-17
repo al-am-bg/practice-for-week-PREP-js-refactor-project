@@ -124,7 +124,6 @@ function countConsonants(word) {
 function alternatingLetters(str) {
     let alternate = str.split("");
     alternate[0] = alternate[0].toLowerCase();
-    console.log(alternate);
     for (let i = 1; i < str.length; i++) {
         if (i % 2 !== 0) alternate[i] = alternate[i].toUpperCase();
         if (i % 2 == 0) alternate[i] = alternate[i].toLowerCase();
